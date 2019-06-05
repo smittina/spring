@@ -1,0 +1,26 @@
+buildscript {
+    ext {
+        springVersion = "5.1.5.RELEASE"
+    }
+}
+group "com.devmind.training"
+version "1.0-SNAPSHOT"
+
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework:spring-core:${springVersion}"
+    compile "org.springframework:spring-context:${springVersion}"
+
+    testCompile "org.springframework:spring-test:${springVersion}"
+    testCompile "junit:junit:4.12"
+    testCompile "org.mockito:mockito-core:2.19.0"
+    testCompile "org.hamcrest:hamcrest-junit:2.0.0.0"
+    testCompile "org.assertj:assertj-core:3.10.0"
+}
