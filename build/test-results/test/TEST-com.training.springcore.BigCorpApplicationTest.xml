@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.training.springcore.BigCorpApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-05T08:39:49" hostname="DESKTOP-ST313F1" time="0.024">
+<testsuite name="com.training.springcore.BigCorpApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-05T08:55:18" hostname="DESKTOP-ST313F1" time="0.016">
   <properties/>
-  <testcase name="run" classname="com.training.springcore.BigCorpApplicationTest" time="0.024"/>
+  <testcase name="run" classname="com.training.springcore.BigCorpApplicationTest" time="0.016"/>
   <system-out><![CDATA[Application startup
-Site{id='siteA', name='Florange', captors=[Captor{id='ac8c2f6a-f847-4e74-b26e-674ea862603d', name='Capteur A'}]}
+Site{id='siteA', name='Florange', captors=[Captor{id='dc1d5bd9-1809-4d6c-b119-2fe3a8852303', name='Capteur A'}]}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
