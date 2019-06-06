@@ -34,23 +34,10 @@ public class SiteServiceImplTest {
     static class SiteServiceTestConfiguration{}
 
     @Autowired
-    @InjectMocks
     private SiteService siteService;
 
     @Rule
     public OutputCapture output = new OutputCapture();
-
-    @Autowired
-    @Mock
-    private CaptorService captorService;
-
-
-
-
-    @Before
-    public void init(){
-        MockitoAnnotations.initMocks(this);
-    }
 
     @Test
     public void findByIdShouldReturnNullWhenIdIsNull(){
@@ -69,7 +56,6 @@ public class SiteServiceImplTest {
         // Initialisation
         String siteId = "siteId";
         Set<Captor> expectedCpators = Collections.singleton(new Captor("Capteur A"));
-        Mockito.when(captorService.findBySite(siteId)).thenReturn(expectedCpators);
 
         // Appel du SUT
         Site site = siteService.findById(siteId);
