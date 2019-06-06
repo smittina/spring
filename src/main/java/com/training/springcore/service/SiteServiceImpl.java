@@ -19,9 +19,7 @@ public class SiteServiceImpl implements SiteService {
     @Autowired
     private ResourceLoader resourceLoader;
 
-    public SiteServiceImpl(){
 
-    }
 
     @Autowired
     public SiteServiceImpl(CaptorService captorService){

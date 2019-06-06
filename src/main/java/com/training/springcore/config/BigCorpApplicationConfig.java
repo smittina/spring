@@ -9,7 +9,7 @@ import org.springframework.core.env.Environment;
 import java.util.HashSet;
 import java.util.Set;
 
-@ComponentScan
+@ComponentScan("com.training.springcore")
 @Configuration
 @EnableAspectJAutoProxy
 public class BigCorpApplicationConfig {
