@@ -1,14 +1,22 @@
 package com.training.springcore.service;
 
 import com.training.springcore.model.Captor;
+import com.training.springcore.service.measure.MeasureServiceConfigurationTest;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Set;
 
-
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes={MeasureServiceConfigurationTest.class})
 public class CaptorServiceImplTest {
-    private CaptorServiceImpl captorService = new CaptorServiceImpl();
+
+    @Autowired
+    private CaptorService captorService;
 
     @Test
     public void findBySiteShouldReturnNullWhenIdIsNull() {

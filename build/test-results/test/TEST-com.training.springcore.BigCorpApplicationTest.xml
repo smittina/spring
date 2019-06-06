@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.training.springcore.BigCorpApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-05T08:55:18" hostname="DESKTOP-ST313F1" time="0.016">
+<testsuite name="com.training.springcore.BigCorpApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-06T08:06:00" hostname="DESKTOP-ST313F1" time="0.131">
   <properties/>
-  <testcase name="run" classname="com.training.springcore.BigCorpApplicationTest" time="0.016"/>
-  <system-out><![CDATA[Application startup
-Site{id='siteA', name='Florange', captors=[Captor{id='dc1d5bd9-1809-4d6c-b119-2fe3a8852303', name='Capteur A'}]}
+  <testcase name="run" classname="com.training.springcore.BigCorpApplicationTest" time="0.131"/>
+  <system-out><![CDATA[Init SiteServiceImpl :com.training.springcore.service.SiteServiceImpl@52b9e8a0
+Init SiteServiceImpl :com.training.springcore.service.SiteServiceImpl@5598dc91
+===============================
+Application [BigCorp application (dev)] - version :1
+plus d'informations sur https://bigcorp.com
+===============================
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[juin 06, 2019 10:05:59 AM org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFOS: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+juin 06, 2019 10:05:59 AM org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
+INFOS: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b0f3608, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2ca3ae2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@36c5e3c2]
+]]></system-err>
 </testsuite>

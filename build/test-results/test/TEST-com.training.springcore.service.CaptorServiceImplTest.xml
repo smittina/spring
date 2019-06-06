@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.training.springcore.service.CaptorServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-05T08:55:18" hostname="DESKTOP-ST313F1" time="0.047">
+<testsuite name="com.training.springcore.service.CaptorServiceImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-06-06T08:06:00" hostname="DESKTOP-ST313F1" time="0.045">
   <properties/>
-  <testcase name="findBySite" classname="com.training.springcore.service.CaptorServiceImplTest" time="0.046"/>
-  <testcase name="findBySiteShouldReturnNullWhenIdIsNull" classname="com.training.springcore.service.CaptorServiceImplTest" time="0.0"/>
+  <testcase name="findBySite" classname="com.training.springcore.service.CaptorServiceImplTest" time="0.043"/>
+  <testcase name="findBySiteShouldReturnNullWhenIdIsNull" classname="com.training.springcore.service.CaptorServiceImplTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[juin 06, 2019 10:06:00 AM org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFOS: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+juin 06, 2019 10:06:00 AM org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
+INFOS: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4cb4f481, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2f38c94f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@709c6c4d]
+]]></system-err>
 </testsuite>
