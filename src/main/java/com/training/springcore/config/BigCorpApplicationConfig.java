@@ -11,5 +11,6 @@ import java.util.Set;
 
 @ComponentScan
 @Configuration
+@EnableAspectJAutoProxy
 public class BigCorpApplicationConfig {
 }

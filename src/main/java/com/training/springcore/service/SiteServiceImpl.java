@@ -1,10 +1,8 @@
 package com.training.springcore.service;
 
 import com.training.springcore.model.Site;
+import com.training.springcore.config.Monitored;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
@@ -31,6 +29,7 @@ public class SiteServiceImpl implements SiteService {
         this.captorService = captorService;
     }
     @Override
+    @Monitored
     public Site findById(String siteId) {
         System.out.println("Appel de findById :"+this);
         if (siteId == null) {

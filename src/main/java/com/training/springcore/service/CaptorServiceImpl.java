@@ -1,11 +1,8 @@
 package com.training.springcore.service;
 
 import com.training.springcore.model.Captor;
-import com.training.springcore.service.measure.FixedMeasureService;
 import com.training.springcore.service.measure.MeasureService;
-import com.training.springcore.service.measure.RealMeasureService;
-import com.training.springcore.service.measure.SimulatedMeasureService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.training.springcore.config.Monitored;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -39,6 +36,7 @@ public class CaptorServiceImpl implements CaptorService{
     }*/
 
     @Override
+    @Monitored
     public Set<Captor> findBySite(String siteId) {
         Set<Captor> captors = new HashSet<>();
         if (siteId == null) {
